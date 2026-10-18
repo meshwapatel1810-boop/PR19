@@ -1,0 +1,131 @@
+
+.app {
+  min-height: 100vh;
+  padding-bottom: 40px;
+}
+
+.header {
+  background: #2563eb;
+  color: white;
+  text-align: center;
+  padding: 30px 16px;
+}
+
+.header h1 {
+  margin: 0 0 10px;
+}
+
+.header p {
+  margin: 0;
+}
+
+.container {
+  width: min(100% - 32px, 1000px);
+  margin: 30px auto;
+  display: grid;
+  gap: 24px;
+}
+
+.card {
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px #00000010;
+}
+
+.card h2 {
+  margin-top: 0;
+  color: #1e293b;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  background: white;
+}
+
+.add-btn,
+.delete-btn {
+  border: none;
+  border-radius: 6px;
+  padding: 10px 16px;
+  color: white;
+  cursor: pointer;
+}
+
+.add-btn {
+  width: 100%;
+  background: #2563eb;
+}
+
+.add-btn:hover {
+  background: #1d4ed8;
+}
+
+.delete-btn {
+  background: #dc2626;
+}
+
+.delete-btn:hover {
+  background: #b91c1c;
+}
+
+.message {
+  color: #15803d;
+  font-weight: bold;
+}
+
+.total {
+  color: #2563eb;
+  font-weight: bold;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th,
+td {
+  padding: 12px;
+  border-bottom: 1px solid #e2e8f0;
+  white-space: nowrap;
+}
+
+th {
+  background: #eff6ff;
+}
+
+.empty {
+  color: #64748b;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: calc(100% - 20px);
+  }
+
+  .card {
+    padding: 16px;
+  }
+}
